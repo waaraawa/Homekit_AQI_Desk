@@ -5,7 +5,6 @@
 #include <TaskScheduler.h>
 #include "Adafruit_BME280.h"
 #include "PMS.h"
-#include <IRsend.h>
 #include "esp8266_config.h"
 #include "homekit_config.h"
 #include "wifi_config.h"
@@ -14,7 +13,6 @@ Scheduler ts;
 PMS pms(Serial);
 PMS::DATA pms_data;
 Adafruit_BME280 bme;
-IRsend irsend(PIN_IR_LED);
 
 Task tOta(OTA_INTERVAL, TASK_FOREVER, &ota_handle, &ts, true);
 Task tHomekit(HOMEKIT_INTERVAL, TASK_FOREVER, &homekit_handle, &ts, true);
@@ -303,11 +301,6 @@ void setup_pms()
     tPMS_init.restartDelayed();
 }
 
-void setup_ir()
-{
-    irsend.begin();
-}
-
 void setup_bme280()
 {
     tBME280_init.restartDelayed();
@@ -390,7 +383,6 @@ void setup() {
     setup_ota();
     setup_bme280();
     setup_pms();
-    setup_ir();
 
     DEBUG_HEAP();
     setup_homekit();
