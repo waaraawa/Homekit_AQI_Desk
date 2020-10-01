@@ -9,3 +9,6 @@
 - [arkhipenko / TaskScheduler](https://github.com/arkhipenko/TaskScheduler)
 - [Adafruit / BME280 Library](https://github.com/adafruit/Adafruit_BME280_Library)
 - [fu-hsi / PMS](https://github.com/fu-hsi/PMS)
+
+## Pin mapping
+![Pin mapping](https://github.com/waaraawa/Homekit_AQI_Desk/blob/master/pin_mapping.png?raw=true)
