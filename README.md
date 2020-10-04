@@ -11,4 +11,10 @@
 - [fu-hsi / PMS](https://github.com/fu-hsi/PMS)
 
 ## Pin mapping
-![Pin mapping](https://github.com/waaraawa/Homekit_AQI_Desk/blob/master/pin_mapping.png?raw=true)
+<img src="./pin_mapping.png" alt="drawing" width="600"/>
+
+## Case Design
+### Cube
+
+<img src="./case_design/cube_v6_front_w_cap.png" alt="drawing" width="200"/><img src="./case_design/cube_v6_front_wo_cap.png" alt="drawing" width="200"/>
+<img src="./case_design/cube_v6_back_w_cap.png" alt="drawing" width="200"/><img src="./case_design/cube_v6_back_wo_cap.png" alt="drawing" width="200"/>
